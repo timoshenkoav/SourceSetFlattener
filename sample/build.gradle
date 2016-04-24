@@ -4,15 +4,14 @@ buildscript {
     repositories {
         jcenter()
         maven {
-            url uri('file:///Users/alex/Projects/Tutorials/repo')
+            url uri('http://maven.tunebrains.com/content/repositories/android/')
         }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
 
-
-            classpath group: 'com.tunebrains', name: 'sourcesetflattener',
-                    version: '1.0-SNAPSHOT'
+        classpath group: 'com.tunebrains', name: 'sourcesetflattener',
+                version: '0.0.1'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

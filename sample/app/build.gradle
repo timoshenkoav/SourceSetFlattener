@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.tunebrains.sourcesetflattener'
 flattener{
-    root 'flat'
+    root 'res-screen'
 }
 android {
     compileSdkVersion 23
@@ -21,7 +21,10 @@ android {
         }
     }
     productFlavors{
-        custom1{
+        flavour1{
+
+        }
+        base{
 
         }
     }
