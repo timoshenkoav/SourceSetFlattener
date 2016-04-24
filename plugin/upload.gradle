@@ -1,0 +1,17 @@
+modifyPom {
+    project {
+        name 'SourceSetFlattener'
+    }
+}
+
+extraArchive {
+    sources = false
+    tests = false
+    javadoc = false
+}
+
+nexus {
+    sign = false
+    repositoryUrl = 'http://maven.tunebrains.com/content/repositories/android/'
+    snapshotRepositoryUrl = 'http://maven.tunebrains.com/content/repositories/snapshots/'
+}
